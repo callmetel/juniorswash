@@ -26,6 +26,8 @@ bower_components/
 *.htaccess
 *.wpress
 .DS_Store
+composer.lock
+package-lock.json
 
 
 # ignore packaged files
