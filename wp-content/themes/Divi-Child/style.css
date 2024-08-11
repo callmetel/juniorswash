@@ -1,0 +1,27 @@
+/*======================================
+Theme Name: Junior's Wash & Detail
+Theme URI: https://divicake.com/
+Description: Theme for amazonlistingexperts.com
+Version: 1.0
+Author: Chantel Duncan
+Author URI: https://callmetel.com
+Template: Divi
+======================================*/
+
+
+/* You can add your own CSS styles here. Use !important to overwrite styles if needed. */
+
+#bpa-front-tabs .bpa-front-si-card .bpa-front-si-card__row {
+	flex-direction:column;
+}
+
+#bpa-front-tabs .bpa-front-si-card .bpa-front-si-card__row .bpa-front-si-card__left {
+	text-align:center;
+	margin-right:0;
+}
+
+#bpa-front-tabs .bpa-front-si-card .bpa-front-si-card__row .bpa-front-si-card__left {
+	width:auto;
+	height:auto;
+	max-width:70%;
+}
