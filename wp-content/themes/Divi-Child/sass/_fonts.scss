@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Maax Rounded';
+    src: url('/wp-content/themes/Divi-Child/fonts/MaaxRounded/MaaxRounded-MediumItalic.woff2') format('woff2'),
+        url('/wp-content/themes/Divi-Child/fonts/MaaxRounded/MaaxRounded-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maax Rounded';
+    src: url('/wp-content/themes/Divi-Child/fonts/MaaxRounded/MaaxRounded-Bold.woff2') format('woff2'),
+        url('/wp-content/themes/Divi-Child/fonts/MaaxRounded/MaaxRounded-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maax Rounded';
+    src: url('/wp-content/themes/Divi-Child/fonts/MaaxRounded/MaaxRounded-Medium.woff2') format('woff2'),
+        url('/wp-content/themes/Divi-Child/fonts/MaaxRounded/MaaxRounded-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maax Rounded';
+    src: url('/wp-content/themes/Divi-Child/fonts/MaaxRounded/MaaxRounded.woff2') format('woff2'),
+        url('/wp-content/themes/Divi-Child/fonts/MaaxRounded/MaaxRounded.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maax Rounded';
+    src: url('/wp-content/themes/Divi-Child/fonts/MaaxRounded/MaaxRounded-BoldItalic.woff2') format('woff2'),
+        url('/wp-content/themes/Divi-Child/fonts/MaaxRounded/MaaxRounded-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+html,
+body {
+    font-family: 'Maax Rounded', sans-serif;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.med {
+    font-weight: 500 !important;
+}
+
+.norm {
+    font-weight: 400 !important;
+}
+
+.txt48 {
+    font-size: 48px !important;
+}

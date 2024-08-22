@@ -12,16 +12,16 @@ Template: Divi
 /* You can add your own CSS styles here. Use !important to overwrite styles if needed. */
 
 #bpa-front-tabs .bpa-front-si-card .bpa-front-si-card__row {
-	flex-direction:column;
+	flex-direction: column;
 }
 
 #bpa-front-tabs .bpa-front-si-card .bpa-front-si-card__row .bpa-front-si-card__left {
-	text-align:center;
-	margin-right:0;
+	text-align: center;
+	margin-right: 0;
 }
 
 #bpa-front-tabs .bpa-front-si-card .bpa-front-si-card__row .bpa-front-si-card__left {
-	width:auto;
-	height:auto;
-	max-width:70%;
+	width: auto;
+	height: auto;
+	max-width: 70%;
 }

@@ -1,0 +1,92 @@
+#main-header {
+    box-shadow: none;
+
+    .centered-inline-logo-wrap {
+        margin: -45px 0px !important;
+    }
+
+
+    .menu-item {
+        font-weight: 500;
+
+        a {
+            font-weight: 500;
+        }
+
+        >a {
+            position: relative;
+
+            &[aria-current="page"]:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%) rotate(32deg);
+                background-image: url('/wp-content/uploads/splash-1.svg');
+                width: 35px;
+                height: 39px;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                opacity: 1;
+                transition: .25s opacity ease-in-out;
+            }
+
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -100%);
+                background-image: url('/wp-content/uploads/menu-item-hover.gif');
+                width: 100%;
+                height: 70%;
+                background-position: center;
+                background-size: 110px;
+                background-repeat: repeat-x;
+                opacity: 0;
+                transition: .25s opacity ease-in-out;
+            }
+        }
+    }
+
+    #top-menu-nav {
+        .menu-item {
+
+            &:hover {
+                >a {
+                    opacity: 1 !important;
+
+                    &:before {
+                        opacity: 1 !important;
+                        background-image: url('/wp-content/uploads/menu-item-hover.gif') !important;
+                    }
+
+                    &:after {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#main-header.et-fixed-header {
+    .centered-inline-logo-wrap {
+        margin: -18px 0px !important;
+    }
+
+    .menu-item {
+        font-size: 12px !important;
+
+        >a[aria-current="page"] {
+            color: #96a5a6 !important;
+
+            &:after {
+                display: none !important;
+            }
+        }
+    }
+}
