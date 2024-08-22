@@ -75,3 +75,7 @@ body {
 .txt48 {
     font-size: 48px !important;
 }
+
+p:empty {
+    display: none;
+}

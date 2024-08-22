@@ -33,3 +33,21 @@ function cc_mime_types($mimes)
 	return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
+
+remove_filter('the_content', 'wpautop');
+add_filter('the_content', 'wpautop', 99);
+add_filter('the_content', 'shortcode_unautop', 100);
+
+/** 
+ * Removes empty paragraph tags from shortcodes in WordPress.
+ */
+function tg_remove_empty_paragraph_tags_from_shortcodes_wordpress($content)
+{
+	$toFix = array(
+		'<p>['    => '[',
+		']</p>'   => ']',
+		']<br />' => ']'
+	);
+	return strtr($content, $toFix);
+}
+add_filter('the_content', 'tg_remove_empty_paragraph_tags_from_shortcodes_wordpress');

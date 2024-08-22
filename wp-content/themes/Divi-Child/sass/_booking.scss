@@ -60,14 +60,35 @@
 }
 
 .washer-booking-submit {
+    .form-list-wrap {
+        padding: 0;
+    }
+
     .single-main-list_item {
+        border: 0 !important;
+
         &:not(.washer-type-section) {
             display: none !important;
         }
 
         .list-header {
+            background: transparent;
+            justify-content: center;
+
             .header-section-step {
                 display: none !important;
+            }
+
+            .section-title-inner {
+                text-align: center;
+
+                h2 {
+                    display: none;
+                }
+
+                p {
+                    color: $gray;
+                }
             }
         }
     }
