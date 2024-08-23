@@ -20,10 +20,13 @@
 
 function divichild_enqueue_scripts()
 {
+	$css_cache_buster = date("YmdHi", filemtime(get_stylesheet_directory() . '/dist/style.min.css'));
+	$js_cache_buster = date("YmdHi", filemtime(get_stylesheet_directory() . '/dist/scripts.min.css'));
 	wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
-	wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/css/style.css');
+	wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/dist/style.min.css', array(), $css_cache_buster);
 	wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css', array(), false, '');
 	wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js', array(), false, '');
+	wp_enqueue_script('child-js', get_stylesheet_directory_uri() . '/dist/scripts.min.js', array('jquery'), $js_cache_buster, '');
 }
 add_action('wp_enqueue_scripts', 'divichild_enqueue_scripts');
 
@@ -33,21 +36,3 @@ function cc_mime_types($mimes)
 	return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
-
-remove_filter('the_content', 'wpautop');
-add_filter('the_content', 'wpautop', 99);
-add_filter('the_content', 'shortcode_unautop', 100);
-
-/** 
- * Removes empty paragraph tags from shortcodes in WordPress.
- */
-function tg_remove_empty_paragraph_tags_from_shortcodes_wordpress($content)
-{
-	$toFix = array(
-		'<p>['    => '[',
-		']</p>'   => ']',
-		']<br />' => ']'
-	);
-	return strtr($content, $toFix);
-}
-add_filter('the_content', 'tg_remove_empty_paragraph_tags_from_shortcodes_wordpress');

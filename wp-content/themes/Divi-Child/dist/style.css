@@ -170,7 +170,7 @@ p:empty {
 .washer-booking-submit .single-main-list_item {
   border: 0 !important; }
   .washer-booking-submit .single-main-list_item:not(.washer-type-section) {
-    display: none !important; }
+    display: none; }
   .washer-booking-submit .single-main-list_item .list-header {
     background: transparent;
     justify-content: center; }
@@ -182,3 +182,34 @@ p:empty {
         display: none; }
       .washer-booking-submit .single-main-list_item .list-header .section-title-inner p {
         color: #808080; }
+  .washer-booking-submit .single-main-list_item .list-footer {
+    text-align: center;
+    color: #00a9be;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    text-transform: uppercase; }
+    .washer-booking-submit .single-main-list_item .list-footer p {
+      cursor: pointer; }
+
+.washer-type-section .list-content ul.input-box-wrapper {
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 !important; }
+
+.washer-type-section .list-item-label {
+  padding: 0.5em !important;
+  border: 0 !important;
+  color: #010101 !important;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.4px; }
+  .washer-type-section .list-item-label .washer-type-img {
+    display: flex; }
+    .washer-type-section .list-item-label .washer-type-img img {
+      width: 100% !important;
+      height: auto !important;
+      border-radius: 0 !important;
+      object-fit: contain !important; }
+
+.washer-type-section input[type=radio]:checked + .list-item-label {
+  background-color: #ececec !important; }

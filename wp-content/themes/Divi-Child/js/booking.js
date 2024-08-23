@@ -51,7 +51,3 @@ jQuery(document).ready(function ($)
     });
 
 });
-jQuery(document).ready(function ($)
-{
-    $('p:empty').remove();
-});
