@@ -4,64 +4,6 @@
 .blue-bg {
   background-color: #2cd1dd !important; }
 
-#main-header {
-  box-shadow: none; }
-  #main-header .centered-inline-logo-wrap {
-    margin: -45px 0px !important; }
-  #main-header .menu-item {
-    font-weight: 500; }
-    #main-header .menu-item a {
-      font-weight: 500; }
-    #main-header .menu-item > a {
-      position: relative; }
-      #main-header .menu-item > a[aria-current="page"]:after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%) rotate(32deg);
-        background-image: url("/wp-content/uploads/splash-1.svg");
-        width: 35px;
-        height: 39px;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        opacity: 1;
-        transition: .25s opacity ease-in-out; }
-      #main-header .menu-item > a:before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -100%);
-        background-image: url("/wp-content/uploads/menu-item-hover.gif");
-        width: 100%;
-        height: 70%;
-        background-position: center;
-        background-size: 110px;
-        background-repeat: repeat-x;
-        opacity: 0;
-        transition: .25s opacity ease-in-out; }
-  #main-header #top-menu-nav .menu-item:hover > a {
-    opacity: 1 !important; }
-    #main-header #top-menu-nav .menu-item:hover > a:before {
-      opacity: 1 !important;
-      background-image: url("/wp-content/uploads/menu-item-hover.gif") !important; }
-    #main-header #top-menu-nav .menu-item:hover > a:after {
-      display: none !important; }
-
-#main-header.et-fixed-header .centered-inline-logo-wrap {
-  margin: -18px 0px !important; }
-
-#main-header.et-fixed-header .menu-item {
-  font-size: 12px !important; }
-  #main-header.et-fixed-header .menu-item > a[aria-current="page"] {
-    color: #96a5a6 !important; }
-    #main-header.et-fixed-header .menu-item > a[aria-current="page"]:after {
-      display: none !important; }
-
 @font-face {
   font-family: 'Maax Rounded';
   src: url("/wp-content/themes/Divi-Child/fonts/MaaxRounded/MaaxRounded-MediumItalic.woff2") format("woff2"), url("/wp-content/themes/Divi-Child/fonts/MaaxRounded/MaaxRounded-MediumItalic.woff") format("woff");
@@ -124,6 +66,67 @@ body {
 
 p:empty {
   display: none; }
+
+body {
+  background: white; }
+
+#main-header {
+  box-shadow: none; }
+  #main-header .centered-inline-logo-wrap {
+    margin: -45px 0px !important; }
+  #main-header .menu-item {
+    font-weight: 500; }
+    #main-header .menu-item a {
+      font-weight: 500; }
+    #main-header .menu-item > a {
+      position: relative; }
+      #main-header .menu-item > a[aria-current="page"]:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%) rotate(32deg);
+        background-image: url("/wp-content/uploads/splash-1.svg");
+        width: 35px;
+        height: 39px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        transition: .25s opacity ease-in-out; }
+      #main-header .menu-item > a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        background-image: url("/wp-content/uploads/menu-item-hover.gif");
+        width: 100%;
+        height: 70%;
+        background-position: center;
+        background-size: 110px;
+        background-repeat: repeat-x;
+        opacity: 0;
+        transition: .25s opacity ease-in-out; }
+  #main-header #top-menu-nav .menu-item:hover > a {
+    opacity: 1 !important; }
+    #main-header #top-menu-nav .menu-item:hover > a:before {
+      opacity: 1 !important;
+      background-image: url("/wp-content/uploads/menu-item-hover.gif") !important; }
+    #main-header #top-menu-nav .menu-item:hover > a:after {
+      display: none !important; }
+
+#main-header.et-fixed-header .centered-inline-logo-wrap {
+  margin: -18px 0px !important; }
+
+#main-header.et-fixed-header .menu-item {
+  font-size: 12px !important; }
+  #main-header.et-fixed-header .menu-item > a[aria-current="page"] {
+    color: #96a5a6 !important; }
+    #main-header.et-fixed-header .menu-item > a[aria-current="page"]:after {
+      display: none !important; }
 
 #washer-booking-form-nav {
   text-align: center; }
@@ -191,11 +194,11 @@ p:empty {
     .washer-booking-submit .single-main-list_item .list-footer p {
       cursor: pointer; }
 
-.washer-type-section .list-content ul.input-box-wrapper {
+.washer-booking_page .single-main-list_item.washer-type-section .list-content ul.input-box-wrapper {
   grid-template-columns: repeat(4, 1fr);
   padding: 0 !important; }
 
-.washer-type-section .list-item-label {
+.washer-booking_page .single-main-list_item.washer-type-section .list-item-label {
   padding: 0.5em !important;
   border: 0 !important;
   color: #010101 !important;
@@ -203,13 +206,140 @@ p:empty {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0.4px; }
-  .washer-type-section .list-item-label .washer-type-img {
+  .washer-booking_page .single-main-list_item.washer-type-section .list-item-label .washer-type-img {
     display: flex; }
-    .washer-type-section .list-item-label .washer-type-img img {
+    .washer-booking_page .single-main-list_item.washer-type-section .list-item-label .washer-type-img img {
       width: 100% !important;
       height: auto !important;
       border-radius: 0 !important;
       object-fit: contain !important; }
 
-.washer-type-section input[type=radio]:checked + .list-item-label {
+.washer-booking_page .single-main-list_item.washer-type-section input[type=radio]:checked + .list-item-label {
   background-color: #ececec !important; }
+
+.washer-booking_page .single-main-list_item.washer-package-section .list-content {
+  margin-top: 30px; }
+
+.washer-booking_page .package-table-wrap {
+  column-gap: 40px; }
+  .washer-booking_page .package-table-wrap .package-table-single-item {
+    padding: 25px 10px;
+    margin-top: 48px;
+    margin-bottom: 48px !important;
+    background: #efefef;
+    border: 0;
+    border-radius: 30px !important;
+    position: relative; }
+    .washer-booking_page .package-table-wrap .package-table-single-item:before {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      border: 8px solid #efefef;
+      background: #efefef;
+      background-size: cover;
+      background-position: center;
+      z-index: 10;
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%); }
+    .washer-booking_page .package-table-wrap .package-table-single-item[data-name="WashWaxVacuum"]:before {
+      background-image: url("/wp-content/uploads/wash-wax-vacuum-icon.jpg"); }
+    .washer-booking_page .package-table-wrap .package-table-single-item[data-name="FullDetail"]:before {
+      background-image: url("/wp-content/uploads/full-detail-icon.jpg"); }
+    .washer-booking_page .package-table-wrap .package-table-single-item[data-name="BuildYourOwnWash"]:before {
+      background-image: url("/wp-content/uploads/byo-wash-icon.jpg"); }
+    .washer-booking_page .package-table-wrap .package-table-single-item[data-name="InteriorExteriorWash"]:before {
+      background-image: url("/wp-content/uploads/interior-exterior-wash-icon.jpg"); }
+    .washer-booking_page .package-table-wrap .package-table-single-item[data-name="ExteriorWash"]:before {
+      background-image: url("/wp-content/uploads/exterior-wash-icon.jpg"); }
+    .washer-booking_page .package-table-wrap .package-table-single-item.selected {
+      border: 8px solid #010101 !important; }
+      .washer-booking_page .package-table-wrap .package-table-single-item.selected:before {
+        border-color: #010101 !important; }
+      .washer-booking_page .package-table-wrap .package-table-single-item.selected .package-table-content-wrap .package-table-footer .booking-btn {
+        transform: translateY(33px) !important; }
+    .washer-booking_page .package-table-wrap .package-table-single-item .package-table-item {
+      text-align: center; }
+    .washer-booking_page .package-table-wrap .package-table-single-item .package-duration {
+      position: relative;
+      top: unset;
+      right: unset;
+      background-color: rgba(0, 0, 0, 0.15);
+      color: rgba(0, 0, 0, 0.4);
+      padding: 0px 8px;
+      border-radius: 5px;
+      font-weight: 500;
+      margin-bottom: 10px; }
+    .washer-booking_page .package-table-wrap .package-table-single-item .package-table-content-wrap .package-table-header .package-title {
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 0;
+      text-align: center;
+      letter-spacing: -0.5px;
+      line-height: 1.1; }
+    .washer-booking_page .package-table-wrap .package-table-single-item .package-table-content-wrap .package-table-header .package-details {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 1;
+      max-width: 200px;
+      margin: auto; }
+    .washer-booking_page .package-table-wrap .package-table-single-item .package-table-content-wrap .package-table-header .package-table-header-price {
+      margin-bottom: 0;
+      position: absolute;
+      align-items: center;
+      display: flex;
+      top: -8px;
+      right: 14px;
+      z-index: 15; }
+      .washer-booking_page .package-table-wrap .package-table-single-item .package-table-content-wrap .package-table-header .package-table-header-price:before {
+        content: 'Starting at';
+        font-size: 10px;
+        letter-spacing: -0.2px;
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: 400; }
+      .washer-booking_page .package-table-wrap .package-table-single-item .package-table-content-wrap .package-table-header .package-table-header-price h3.price {
+        color: #008fad;
+        padding: 10px 10px 10px 3px;
+        font-size: 25px;
+        letter-spacing: -1.25px;
+        line-height: 1;
+        margin: 0; }
+        .washer-booking_page .package-table-wrap .package-table-single-item .package-table-content-wrap .package-table-header .package-table-header-price h3.price sup.currency {
+          font-size: 14px;
+          line-height: 1; }
+    .washer-booking_page .package-table-wrap .package-table-single-item .package-table-content-wrap .package-table-content ul.package-list {
+      text-align: left;
+      margin-bottom: 0; }
+      .washer-booking_page .package-table-wrap .package-table-single-item .package-table-content-wrap .package-table-content ul.package-list li {
+        font-weight: 500;
+        line-height: 1.4;
+        color: #000;
+        letter-spacing: -0.25px; }
+        .washer-booking_page .package-table-wrap .package-table-single-item .package-table-content-wrap .package-table-content ul.package-list li:not(:last-child) {
+          margin-bottom: 12px; }
+        .washer-booking_page .package-table-wrap .package-table-single-item .package-table-content-wrap .package-table-content ul.package-list li:before {
+          content: "\4e";
+          font-family: ETmodules;
+          background: 0 0;
+          color: #00a9be;
+          font-weight: 700;
+          font-size: 22px;
+          left: -4px;
+          top: -6px;
+          width: auto;
+          height: auto; }
+    .washer-booking_page .package-table-wrap .package-table-single-item .package-table-content-wrap .package-table-footer {
+      padding-top: 0; }
+      .washer-booking_page .package-table-wrap .package-table-single-item .package-table-content-wrap .package-table-footer .booking-btn {
+        transform: translateY(25px);
+        background: #010101;
+        border: 0;
+        color: #ffffff;
+        font-weight: 600;
+        border-radius: 24px;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        font-size: 15px; }
