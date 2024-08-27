@@ -1,6 +1,13 @@
 .washer-booking_page {
     .package-table-wrap {
         column-gap: 40px;
+        user-select: none;
+        overflow-x: scroll;
+
+        &.active {
+            cursor: grabbing;
+            cursor: -webkit-grabbing;
+        }
 
         .package-table-single-item {
             padding: 25px 10px;
